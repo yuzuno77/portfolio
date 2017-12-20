@@ -1,0 +1,107 @@
+.profile_name{
+	margin-bottom: 40px;
+}
+
+.profile_name_ja{
+	font-size: 2.0rem;
+	line-height: 2.0rem;
+	margin: 10px 0;
+	letter-spacing: 0.2rem;
+}
+
+.profile_name_en{
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	margin: 10px 0;
+	letter-spacing: 0.2rem;
+}
+
+.profile_about_item{
+	margin-bottom: 40px;
+}
+
+.profile_about_item_list{
+	font-size: 1.4rem;
+	list-style: none;
+	padding: 0;
+}
+
+.profile_about_item_data{
+	font-size: 1.2rem;
+	margin: 15px 0 3px; 
+
+}
+
+.profile_about_item_label{
+	font-size: 1.2rem;
+	display: inline-block;
+	color: #e24938;
+	padding: 3px 12px; 
+	border: 1px solid #e24938;
+}
+
+.profile_parameter_item{
+	display: flex;
+	flex-direction: row;
+	margin: 15px 0;
+	@include mq(md){
+		flex-direction: column;
+	}
+}
+
+.profile_parameter_item_title{
+	font-size: 1.4rem;
+	width: 110px;
+	line-height: 30px;
+	padding-right: 20px;
+	text-align: right;
+	@include mq(md){
+		width: 100%;
+		text-align: left;
+	}
+}
+
+.profile_parameter_item_bar{
+	width: 50%;
+	height: 30px;
+	background-color: #e2dfd7;
+	position: relative;
+	border-radius: 3px;
+	@include mq(md){
+		width: 100%;
+	}
+}
+
+.profile_parameter_item_bar_color{
+	height: 30px;
+	left: 0;
+	background-color: #e24938;
+	position: absolute;
+	border-radius: 3px 0 0 3px;	
+}
+.width_30{
+	width: 30%;
+}
+.width_40{
+	width: 40%;
+}
+.width_50{
+	width: 50%;
+}
+.width_60{
+	width: 60%;
+}
+.width_70{
+	width: 70%;
+}
+.width_80{
+	width: 70%;
+}
+
+.profile_parameter_item_bar_number{
+	right: 10px;
+	position: absolute;
+	font-size: 1.4rem;
+	color: #fff;
+	line-height: 30px;
+}

@@ -1,0 +1,28 @@
+.header{
+}
+
+.header_wrapper{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_wrapper{
+	display: inline;
+	padding: 10px 0;
+}
+
+.nav_item{
+	color: #473e3e;
+	font-size: 1.4rem;
+	margin: 0 15px;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	padding-bottom: 0.3rem;
+	transition: 0.2s linear 0s;
+}
+
+.nav_item:hover{
+	color: #e24938;
+}
+

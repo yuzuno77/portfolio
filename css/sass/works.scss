@@ -1,0 +1,159 @@
+.works_subtitle{
+	font-size: 1.4rem;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+.works_wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	flex-wrap: wrap;
+	margin-bottom: 40px; 
+	@include mq(md){
+		justify-content: left;
+	}
+}
+
+.works_item{
+	width: 30%;
+	margin: 10px;
+	background-color: #e24938;
+	position: relative;
+	@include mq(md){
+		width: 40%;
+	}
+	@include mq(sm){
+		width: 100%;
+	}
+}
+
+.works_item img{
+	height: 100%;
+	width: 100%;
+}
+
+.works_item_cover{
+	background-color: #e24938;
+	z-index: 998;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: .3s ease;
+}
+
+.works_item:hover .works_item_cover{
+	opacity: .8;
+}
+
+.works_item h5{
+	position: absolute;
+	z-index: 999;
+	max-width: 82%;
+    bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 16px;
+    transform: translateY(1em);
+    opacity: 0;
+    color: #fff;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.works_item:hover h5{
+	transform: translateY(0);
+    opacity: 1;
+}
+
+/*modal------------------------------------------*/
+
+.modal_wrapper{
+	width: 70%;
+	background-color: #f8f6f1;
+	@include mq(md){
+		width: 80%;
+	}
+}
+
+.modal_img{
+	width: 40%;
+	margin: 0 auto;
+	@include mq(sm){
+		width: 100%;
+		padding: 0 10px;
+		margin-top: 40px;
+	}
+}
+
+.modal_img img{
+	width: 100%;
+}
+
+
+.modal_text{
+	padding: 0 50px;
+	margin: 0 auto;
+	@include mq(md){
+		padding: 0 10px;
+	}
+}
+
+.modal_title{
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.modal_link{
+	color: #473e3e;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
+
+.modal_link a{
+	text-decoration: none;	
+}
+.modal_link a:hover{
+	color: #e24938;	
+}
+
+.modal_about {
+	font-size: 1.2rem;
+	margin: 20px 0;
+}
+
+.modal_label{
+	font-size: 1.2rem;
+	display: inline-block;
+	color: #e24938;
+	padding: 2px 10px; 
+	margin: 15px 0 5px;
+	border: 1px solid #e24938;
+}
+
+.modal_contents{
+	font-size: 1.2rem;
+}
+
+
+.modal-header{
+	position: relative;
+	background-color: #f8f6f1;
+}
+
+.modal-close-icon{
+	position: absolute;
+    right: 1.2rem;
+    text-decoration: none;
+    color: #e24938;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+}
+
+.modal_page_img{
+	width: 100%;
+}
+
+
